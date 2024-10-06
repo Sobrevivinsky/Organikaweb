@@ -1,0 +1,487 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* GENERAL*/
+#body {
+  background-color: rgba(229, 229, 216, 0.8);
+}
+
+#main {
+  min-height: 100vh;
+  margin-top: 5%;
+}
+
+/* INDEX */
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: #5A4202;
+}
+
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 2em;
+}
+
+h3 {
+  font-family: "Raleway", sans-serif;
+}
+
+h4 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500px;
+  text-align: end;
+  margin-right: 2em;
+}
+
+p {
+  font-family: "Raleway", sans-serif;
+}
+
+.header__navbar {
+  background-color: #59A7A7;
+  font-family: "Raleway", sans-serif;
+  font-weight: 480;
+}
+
+/* HOME INDEX */
+.main__index--photo1 {
+  background-color: #9DD6B3;
+}
+
+.main__index--card {
+  background-color: #9DD6B3;
+}
+
+.slider {
+  width: 100vw;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider .slide__track {
+  display: flex;
+  animation: scroll 40s linear infinite;
+  -webkit-animation: scroll 40s linear infinite;
+  width: 7000px;
+}
+
+.slider .slide {
+  width: 700px;
+}
+
+.slider .slide img {
+  width: 100%;
+}
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-3500px);
+    transform: translateX(-3500px);
+  }
+}
+/* FOOTER */
+#footer {
+  margin-top: auto;
+}
+
+.footer__row {
+  min-height: 100px;
+  display: flex;
+  background-color: #59A7A7;
+}
+
+.footer__navbar ul {
+  display: flex;
+  text-decoration: none;
+  justify-content: left;
+  align-items: center;
+}
+
+.footer__navbar--redes {
+  color: black;
+  padding: 1em;
+}
+
+/* PRODUCTOS */
+.main__row--product {
+  height: auto;
+  background-color: #9DD6B3;
+  justify-items: end;
+}
+
+.main__product--container {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.main__product--text {
+  font-size: 14px;
+  text-align: center justify;
+}
+
+.main__button--product {
+  display: flex;
+  height: 2.5em;
+  width: 5em;
+  align-items: center;
+  font-family: "Raleway";
+}
+
+/* CONTACTO */
+.main__row--contact {
+  display: flex;
+  background-color: #9DD6B3;
+  font-family: "Raleway", sans-serif;
+  margin-top: 4em;
+}
+
+.messagebox {
+  height: 11.5em;
+}
+
+.main__row--map {
+  display: flex;
+  background-color: #9DD6B3;
+  padding: 10px;
+}
+
+.main__map--container {
+  display: flex;
+  position: relative;
+  height: 380px;
+  width: auto;
+}
+
+/* BLOG */
+.main__blog--backround {
+  height: auto;
+  background-color: #9DD6B3;
+  margin-top: 5em;
+}
+
+.main__blog--textarea {
+  display: block;
+  padding: 2em;
+  text-align: justify;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.main__blog--title {
+  font-size: larger;
+}
+
+/* CARRITO */
+.main__cart {
+  min-width: auto;
+  height: 100vh;
+  background-color: #9DD6B3;
+  margin-top: 3em;
+}
+
+.main__cart--grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "  .    PRODUCTO CANTIDAD PRECIO ELIMINAR" "foto2 descripcion2 cantidad2 precio2 boton2" "foto3 descripcion3 cantidad3 precio3 boton3" "foto4 descripcion4 cantidad4 precio4 boton4" "foto5 descripcion5 cantidad5 precio5 boton5" "foto6 descripcion6 cantidad6 precio6 boton6" "VOLVER TOTAL SUMACANT SUMAPREC PAGAR";
+  row-gap: 10px;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.foto2 {
+  grid-area: foto2;
+  padding: 0.5em;
+}
+
+.foto3 {
+  grid-area: foto3;
+  padding: 0.5em;
+}
+
+.foto4 {
+  grid-area: foto4;
+  padding: 0.5em;
+}
+
+.foto5 {
+  grid-area: foto5;
+  padding: 0.5em;
+}
+
+.foto6 {
+  grid-area: foto6;
+  padding: 0.5em;
+}
+
+.VOLVER {
+  grid-area: VOLVER;
+  font-family: "Raleway";
+  font-size: 13px;
+  text-align: center;
+  padding: 10px;
+}
+
+.PRODUCTO {
+  grid-area: PRODUCTO;
+  font-family: "Raleway";
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  background-color: lightgray;
+  padding: 10px;
+}
+
+.descripcion2 {
+  grid-area: descripcion2;
+  font-family: "Raleway";
+  font-size: 13px;
+  text-align: center;
+  padding: 10px;
+}
+
+.descripcion3 {
+  grid-area: descripcion3;
+  font-family: "Raleway";
+  font-size: 13px;
+  text-align: center;
+  padding: 10px;
+}
+
+.descripcion4 {
+  grid-area: descripcion4;
+  font-family: "Raleway";
+  font-size: 13px;
+  text-align: center;
+  padding: 10px;
+}
+
+.descripcion5 {
+  grid-area: descripcion5;
+  font-family: "Raleway";
+  font-size: 13px;
+  text-align: center;
+  padding: 10px;
+}
+
+.descripcion6 {
+  grid-area: descripcion6;
+  font-family: "Raleway";
+  font-size: 13px;
+  text-align: center;
+  padding: 10px;
+}
+
+.TOTAL {
+  grid-area: TOTAL;
+  font-family: "Raleway";
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  background-color: lightgray;
+  padding: 10px;
+}
+
+.CANTIDAD {
+  grid-area: CANTIDAD;
+  font-family: "Raleway";
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  background-color: lightgray;
+  padding: 10px;
+}
+
+.cantidad2 {
+  grid-area: cantidad2;
+  font-family: "Raleway";
+  font-size: 14px;
+  text-align: center;
+  background-color: lightgray;
+  padding: 10px;
+}
+
+.cantidad3 {
+  grid-area: cantidad3;
+  font-family: "Raleway";
+  font-size: 14px;
+  text-align: center;
+  background-color: lightgray;
+  padding: 10px;
+}
+
+.cantidad4 {
+  grid-area: cantidad4;
+  font-family: "Raleway";
+  font-size: 13px;
+  text-align: center;
+  background-color: lightgray;
+  padding: 10px;
+}
+
+.cantidad5 {
+  grid-area: cantidad5;
+  font-family: "Raleway";
+  font-size: 13px;
+  text-align: center;
+  background-color: lightgray;
+  padding: 10px;
+}
+
+.cantidad6 {
+  grid-area: cantidad6;
+  font-family: "Raleway";
+  font-size: 13px;
+  text-align: center;
+  background-color: lightgray;
+  padding: 10px;
+}
+
+.SUMACANT {
+  grid-area: SUMACANT;
+  font-family: "Raleway";
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  background-color: lightgray;
+  padding: 10px;
+}
+
+.PRECIO {
+  grid-area: PRECIO;
+  font-family: "Raleway";
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  background-color: lightgray;
+  padding: 10px;
+}
+
+.precio2 {
+  grid-area: precio2;
+  font-family: "Raleway";
+  font-size: 13px;
+  text-align: center;
+  background-color: lightgray;
+  padding: 10px;
+}
+
+.precio3 {
+  grid-area: precio3;
+  font-family: "Raleway";
+  font-size: 13px;
+  text-align: center;
+  background-color: lightgray;
+  padding: 10px;
+}
+
+.precio4 {
+  grid-area: precio4;
+  font-family: "Raleway";
+  font-size: 13px;
+  text-align: center;
+  background-color: lightgray;
+  padding: 10px;
+}
+
+.precio5 {
+  grid-area: precio5;
+  font-family: "Raleway";
+  font-size: 13px;
+  text-align: center;
+  background-color: lightgray;
+  padding: 10px;
+}
+
+.precio6 {
+  grid-area: precio6;
+  font-family: "Raleway";
+  font-size: 14px;
+  text-align: center;
+  background-color: lightgray;
+  padding: 14px;
+}
+
+.SUMAPREC {
+  grid-area: SUMAPREC;
+  font-family: "Raleway";
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  background-color: lightgray;
+  padding: 10px;
+}
+
+.ELIMINAR {
+  grid-area: ELIMINAR;
+  font-family: "Raleway";
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  background-color: lightgray;
+  padding: 10px;
+}
+
+.boton2 {
+  grid-area: boton2;
+  font-family: "Raleway";
+  font-size: 13px;
+  text-align: center;
+  padding: 10px;
+}
+
+.boton3 {
+  grid-area: boton3;
+  font-family: "Raleway";
+  font-size: 13px;
+  text-align: center;
+  padding: 10px;
+}
+
+.boton4 {
+  grid-area: boton4;
+  font-family: "Raleway";
+  font-size: 13px;
+  text-align: center;
+  padding: 10px;
+}
+
+.boton5 {
+  grid-area: boton5;
+  font-family: "Raleway";
+  font-size: 13px;
+  text-align: center;
+  padding: 10px;
+}
+
+.boton6 {
+  grid-area: boton6;
+  font-family: "Raleway";
+  font-size: 13px;
+  text-align: center;
+  background-color: lightgray;
+  padding: 10px;
+}
+
+.PAGAR {
+  grid-area: PAGAR;
+  font-family: "Raleway";
+  font-size: 13px;
+  text-align: center;
+  padding: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */

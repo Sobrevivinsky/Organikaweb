@@ -1,0 +1,35 @@
+
+
+/* PRODUCTOS */
+
+
+.main__row--product {
+
+    height:auto;
+    background-color:#9DD6B3;
+    justify-items:end;
+}
+
+.main__product--container {
+
+    display:flex;
+    justify-content:space-between;
+    align-content: center;
+
+}
+
+.main__product--text {
+
+    font-size: 14px;
+    text-align:center justify;
+}
+
+.main__button--product {
+
+    display:flex;
+    height: 2.5em;
+    width: 5em;
+    align-items:center;
+    font-family:"Raleway";
+
+}
