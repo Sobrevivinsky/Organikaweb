@@ -4,6 +4,7 @@
 
 .main__row--contact {
 
+    width:100vw;
     display:flex;
     background-color:#9DD6B3;
     font-family: "Raleway", sans-serif;
@@ -16,7 +17,18 @@
     height: 11.5em;
 }
 
+
+
+.main__contact--container {
+
+    display:flex;
+    justify-content:space-between;
+    align-content: center;
+
+}
+
 .main__row--map {
+
 
     display:flex;
     background-color: #9DD6B3;
@@ -26,8 +38,10 @@
 
 .main__map--container {
 
+    
     display:flex;
     position:relative;
     height:380px;
     width:auto;
+    margin-left:1em;
 }

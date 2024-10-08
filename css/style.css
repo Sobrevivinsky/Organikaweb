@@ -1,3 +1,5 @@
+/* IMPORTS ESTILOS PRINCIPALES */
+/* RESET*/
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +8,7 @@
   list-style: none;
 }
 
-/* GENERAL*/
+/* PRINCIPALES */
 #body {
   background-color: rgba(229, 229, 216, 0.8);
 }
@@ -16,7 +18,6 @@
   margin-top: 5%;
 }
 
-/* INDEX */
 h1 {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -48,50 +49,18 @@ p {
 .header__navbar {
   background-color: #59A7A7;
   font-family: "Raleway", sans-serif;
+}
+
+.nav-link {
+  font-weight: 320;
+  transition: font-weight 0, 5 ease, color 0, 5 ease;
+}
+
+.nav-link:hover {
   font-weight: 480;
+  color: #9DD6B3;
 }
 
-/* HOME INDEX */
-.main__index--photo1 {
-  background-color: #9DD6B3;
-}
-
-.main__index--card {
-  background-color: #9DD6B3;
-}
-
-.slider {
-  width: 100vw;
-  height: auto;
-  margin: auto;
-  overflow: hidden;
-}
-
-.slider .slide__track {
-  display: flex;
-  animation: scroll 40s linear infinite;
-  -webkit-animation: scroll 40s linear infinite;
-  width: 7000px;
-}
-
-.slider .slide {
-  width: 700px;
-}
-
-.slider .slide img {
-  width: 100%;
-}
-
-@keyframes scroll {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(-3500px);
-    transform: translateX(-3500px);
-  }
-}
 /* FOOTER */
 #footer {
   margin-top: auto;
@@ -113,8 +82,17 @@ p {
 .footer__navbar--redes {
   color: black;
   padding: 1em;
+  font-size: 18px;
+  font-weight: 320;
+  transition: color 0.5 ease, font-size 0.5 ease;
 }
 
+.footer__navbar--redes:hover {
+  color: #9DD6B3;
+  font-size: 19px;
+}
+
+/* IMPORTS ESTILOS PAGES */
 /* PRODUCTOS */
 .main__row--product {
   height: auto;
@@ -130,7 +108,7 @@ p {
 
 .main__product--text {
   font-size: 14px;
-  text-align: center justify;
+  text-align: center;
 }
 
 .main__button--product {
@@ -139,31 +117,6 @@ p {
   width: 5em;
   align-items: center;
   font-family: "Raleway";
-}
-
-/* CONTACTO */
-.main__row--contact {
-  display: flex;
-  background-color: #9DD6B3;
-  font-family: "Raleway", sans-serif;
-  margin-top: 4em;
-}
-
-.messagebox {
-  height: 11.5em;
-}
-
-.main__row--map {
-  display: flex;
-  background-color: #9DD6B3;
-  padding: 10px;
-}
-
-.main__map--container {
-  display: flex;
-  position: relative;
-  height: 380px;
-  width: auto;
 }
 
 /* BLOG */
@@ -183,6 +136,14 @@ p {
 
 .main__blog--title {
   font-size: larger;
+}
+
+.main__blog--photo1 {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
 }
 
 /* CARRITO */
@@ -482,6 +443,88 @@ p {
   font-size: 13px;
   text-align: center;
   padding: 10px;
+}
+
+/* CONTACTO */
+.main__row--contact {
+  width: 100vw;
+  display: flex;
+  background-color: #9DD6B3;
+  font-family: "Raleway", sans-serif;
+  margin-top: 4em;
+}
+
+.messagebox {
+  height: 11.5em;
+}
+
+.main__contact--container {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.main__row--map {
+  display: flex;
+  background-color: #9DD6B3;
+  padding: 10px;
+}
+
+.main__map--container {
+  display: flex;
+  position: relative;
+  height: 380px;
+  width: auto;
+  margin-left: 1em;
+}
+
+/* FONTS */
+@font-face {
+  font-family: "Raleway", "sans-serif";
+  src: url("../fonts/Raleway-VariableFont_wght.ttf") format("truetype"), url("../fonts/Raleway-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* HOME INDEX */
+.main__index--photo1 {
+  background-color: #9DD6B3;
+}
+
+.main__index--card {
+  background-color: #9DD6B3;
+}
+
+.slider {
+  width: 100vw;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider .slide__track {
+  display: flex;
+  animation: scroll 40s linear infinite;
+  -webkit-animation: scroll 40s linear infinite;
+  width: 7000px;
+}
+
+.slider .slide {
+  width: 700px;
+}
+
+.slider .slide img {
+  width: 100%;
+}
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-3500px);
+    transform: translateX(-3500px);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

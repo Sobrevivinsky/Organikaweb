@@ -1,7 +1,8 @@
 
 /* IMPORTS ESTILOS PRINCIPALES */
 
-
+@import "styles-principales/reset.scss";
+@import "styles-principales/header.scss";
 @import "styles-principales/_footer.scss";
 
 
@@ -20,81 +21,9 @@
     font-weight:normal;
     font-style:normal;
 
-
 } 
 
 
-
-/* RESET*/
-
-
-* {
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    text-decoration:none;
-    list-style:none;
-}
-
-/* PRINCIPALES */
-
-
-#body {
-  background-color:rgba(229,229,216,0.8);
-
-}
-
-#main {
-
-  min-height:100vh;
-  margin-top: 5%;
-  
-
-  }
-
-
-h1 {
-    font-family:"Raleway", sans-serif;
-    font-weight: 700;
-    color:#5A4202;
-
-}
-
-h2 {
-  
-  font-family:"Raleway", sans-serif;
-  font-size:20px;
-  font-weight:600;
-  margin-left:2em;
-
-}
-
-h3 {
-
-  font-family:"Raleway", sans-serif;
-
-}
-
-h4 {
-  font-family:"Raleway", sans-serif;
-  font-weight:500px;
-  text-align: end;
-  margin-right:2em;
-}
-
-p {
-  font-family:"Raleway", sans-serif;
-  
-
-}
-
-
-.header__navbar {
-  background-color:#59A7A7;
-  font-family:"Raleway", sans-serif;
-  font-weight:480;
-  
-}
 
 /* HOME INDEX */
 
@@ -106,10 +35,7 @@ p {
 
 .main__index--card {
 
-  
-
   background-color:#9DD6B3;
-
 
 }
 

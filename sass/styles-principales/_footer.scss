@@ -32,5 +32,15 @@
     
     color:black;
     padding:1em;
+    font-size: 18px;
+    font-weight:320;
+    transition: color 0.5 ease, font-size 0.5 ease;
 
 }
+
+.footer__navbar--redes:hover {
+
+    color:#9DD6B3;
+    font-size:19px;
+}
+
