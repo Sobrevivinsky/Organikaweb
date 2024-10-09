@@ -52,13 +52,15 @@ p {
 }
 
 .nav-link {
+  font-size: 16px;
   font-weight: 320;
   transition: font-weight 0, 5 ease, color 0, 5 ease;
 }
 
 .nav-link:hover {
+  font-size: 17px;
   font-weight: 480;
-  color: #9DD6B3;
+  color: #5ae48f;
 }
 
 /* FOOTER */
@@ -88,8 +90,8 @@ p {
 }
 
 .footer__navbar--redes:hover {
-  color: #9DD6B3;
-  font-size: 19px;
+  color: #5ae48f;
+  font-size: 22px;
 }
 
 /* IMPORTS ESTILOS PAGES */
@@ -149,18 +151,17 @@ p {
 /* CARRITO */
 .main__cart {
   min-width: auto;
-  height: 100vh;
   background-color: #9DD6B3;
   margin-top: 3em;
 }
 
 .main__cart--grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas: "  .    PRODUCTO CANTIDAD PRECIO ELIMINAR" "foto2 descripcion2 cantidad2 precio2 boton2" "foto3 descripcion3 cantidad3 precio3 boton3" "foto4 descripcion4 cantidad4 precio4 boton4" "foto5 descripcion5 cantidad5 precio5 boton5" "foto6 descripcion6 cantidad6 precio6 boton6" "VOLVER TOTAL SUMACANT SUMAPREC PAGAR";
   row-gap: 10px;
-  margin-left: 1em;
-  margin-right: 1em;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .foto2 {
@@ -190,15 +191,15 @@ p {
 
 .VOLVER {
   grid-area: VOLVER;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 13px;
   text-align: center;
-  padding: 10px;
+  padding: 5px;
 }
 
 .PRODUCTO {
   grid-area: PRODUCTO;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 13px;
   font-weight: 600;
   text-align: center;
@@ -208,7 +209,7 @@ p {
 
 .descripcion2 {
   grid-area: descripcion2;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 13px;
   text-align: center;
   padding: 10px;
@@ -216,7 +217,7 @@ p {
 
 .descripcion3 {
   grid-area: descripcion3;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 13px;
   text-align: center;
   padding: 10px;
@@ -224,7 +225,7 @@ p {
 
 .descripcion4 {
   grid-area: descripcion4;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 13px;
   text-align: center;
   padding: 10px;
@@ -232,7 +233,7 @@ p {
 
 .descripcion5 {
   grid-area: descripcion5;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 13px;
   text-align: center;
   padding: 10px;
@@ -240,7 +241,7 @@ p {
 
 .descripcion6 {
   grid-area: descripcion6;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 13px;
   text-align: center;
   padding: 10px;
@@ -248,7 +249,7 @@ p {
 
 .TOTAL {
   grid-area: TOTAL;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 14px;
   font-weight: 600;
   text-align: center;
@@ -258,7 +259,7 @@ p {
 
 .CANTIDAD {
   grid-area: CANTIDAD;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 13px;
   font-weight: 600;
   text-align: center;
@@ -268,7 +269,7 @@ p {
 
 .cantidad2 {
   grid-area: cantidad2;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 14px;
   text-align: center;
   background-color: lightgray;
@@ -277,7 +278,7 @@ p {
 
 .cantidad3 {
   grid-area: cantidad3;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 14px;
   text-align: center;
   background-color: lightgray;
@@ -286,7 +287,7 @@ p {
 
 .cantidad4 {
   grid-area: cantidad4;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 13px;
   text-align: center;
   background-color: lightgray;
@@ -295,7 +296,7 @@ p {
 
 .cantidad5 {
   grid-area: cantidad5;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 13px;
   text-align: center;
   background-color: lightgray;
@@ -304,7 +305,7 @@ p {
 
 .cantidad6 {
   grid-area: cantidad6;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 13px;
   text-align: center;
   background-color: lightgray;
@@ -313,7 +314,7 @@ p {
 
 .SUMACANT {
   grid-area: SUMACANT;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 13px;
   font-weight: 600;
   text-align: center;
@@ -323,7 +324,7 @@ p {
 
 .PRECIO {
   grid-area: PRECIO;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 13px;
   font-weight: 600;
   text-align: center;
@@ -333,7 +334,7 @@ p {
 
 .precio2 {
   grid-area: precio2;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 13px;
   text-align: center;
   background-color: lightgray;
@@ -342,7 +343,7 @@ p {
 
 .precio3 {
   grid-area: precio3;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 13px;
   text-align: center;
   background-color: lightgray;
@@ -351,7 +352,7 @@ p {
 
 .precio4 {
   grid-area: precio4;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 13px;
   text-align: center;
   background-color: lightgray;
@@ -360,7 +361,7 @@ p {
 
 .precio5 {
   grid-area: precio5;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 13px;
   text-align: center;
   background-color: lightgray;
@@ -369,7 +370,7 @@ p {
 
 .precio6 {
   grid-area: precio6;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 14px;
   text-align: center;
   background-color: lightgray;
@@ -378,7 +379,7 @@ p {
 
 .SUMAPREC {
   grid-area: SUMAPREC;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 13px;
   font-weight: 600;
   text-align: center;
@@ -388,7 +389,7 @@ p {
 
 .ELIMINAR {
   grid-area: ELIMINAR;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 13px;
   font-weight: 600;
   text-align: center;
@@ -398,7 +399,7 @@ p {
 
 .boton2 {
   grid-area: boton2;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 13px;
   text-align: center;
   padding: 10px;
@@ -406,7 +407,7 @@ p {
 
 .boton3 {
   grid-area: boton3;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 13px;
   text-align: center;
   padding: 10px;
@@ -414,7 +415,7 @@ p {
 
 .boton4 {
   grid-area: boton4;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 13px;
   text-align: center;
   padding: 10px;
@@ -422,7 +423,7 @@ p {
 
 .boton5 {
   grid-area: boton5;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 13px;
   text-align: center;
   padding: 10px;
@@ -430,7 +431,7 @@ p {
 
 .boton6 {
   grid-area: boton6;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 13px;
   text-align: center;
   background-color: lightgray;
@@ -439,15 +440,14 @@ p {
 
 .PAGAR {
   grid-area: PAGAR;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 13px;
   text-align: center;
-  padding: 10px;
+  padding: 5px;
 }
 
 /* CONTACTO */
 .main__row--contact {
-  width: 100vw;
   display: flex;
   background-color: #9DD6B3;
   font-family: "Raleway", sans-serif;
@@ -458,24 +458,26 @@ p {
   height: 11.5em;
 }
 
-.main__contact--container {
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-}
-
 .main__row--map {
   display: flex;
   background-color: #9DD6B3;
-  padding: 10px;
+  font-family: "Raleway", sans-serif;
 }
 
-.main__map--container {
+.main__row--photo {
+  background-color: #9DD6B3;
+}
+
+.main__map {
   display: flex;
-  position: relative;
-  height: 380px;
-  width: auto;
-  margin-left: 1em;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.main__contact--invite {
+  justify-content: center;
+  padding: 3px;
+  margin: 1px;
 }
 
 /* FONTS */

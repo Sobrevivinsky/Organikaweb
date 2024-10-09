@@ -4,7 +4,6 @@
 
 .main__row--contact {
 
-    width:100vw;
     display:flex;
     background-color:#9DD6B3;
     font-family: "Raleway", sans-serif;
@@ -18,30 +17,32 @@
 }
 
 
-
-.main__contact--container {
-
-    display:flex;
-    justify-content:space-between;
-    align-content: center;
-
-}
-
 .main__row--map {
 
-
     display:flex;
-    background-color: #9DD6B3;
-    padding:10px;
+    background-color:#9DD6B3;
+    font-family: "Raleway", sans-serif;
+
+    
 
 }
 
-.main__map--container {
+.main__row--photo {
 
-    
+    background-color:#9DD6B3; 
+
+}
+.main__map {
+
     display:flex;
-    position:relative;
-    height:380px;
-    width:auto;
-    margin-left:1em;
+    justify-content: center;
+    padding-top:20px;
+}
+
+.main__contact--invite {
+
+
+    justify-content: center;
+    padding:3px;
+    margin:1px;
 }
