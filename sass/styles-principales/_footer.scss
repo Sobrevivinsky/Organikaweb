@@ -11,9 +11,10 @@
 
 .footer__row {
     
-    min-height:100px;
+    min-height:200px;
     display:flex;
     background-color:#59A7A7;
+    border: 1px gray solid;
 
 }
 
@@ -23,7 +24,7 @@
     display:flex;
     text-decoration:none;
     justify-content:left;
-    align-items: center;
+    align-items:center;
     
 }
 
@@ -34,13 +35,39 @@
     padding:1em;
     font-size: 18px;
     font-weight:320;
-    transition: color 0.5 ease, font-size 0.5 ease;
+    transition: color 1 ease, font-size 1 ease;
+    
+
 
 }
 
 .footer__navbar--redes:hover {
 
-    color:#5ae48f;
+    color:#f0e9a6;
     font-size:22px;
 }
+
+.footer__text {
+
+    font-size:14px;
+    justify-content:left;
+    margin-left:2em;
+}
+
+.footer__text h4 {
+    
+    font-size:28px;
+    text-align:left;
+    margin-left: 1em;
+
+}
+
+.footer__text--interlineado {
+
+    line-height:20%;
+    margin-top: 1em;
+    margin-left:2em;
+}
+
+
 
