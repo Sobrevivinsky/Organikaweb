@@ -25,15 +25,16 @@
 .main__cart--grid {
 
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 80px 1fr 80px 1fr;
     grid-template-areas:
-    "  .    PRODUCTO CANTIDAD PRECIO ELIMINAR"
-    "foto2 descripcion2 cantidad2 precio2 boton2"
-    "foto3 descripcion3 cantidad3 precio3 boton3"
-    "foto4 descripcion4 cantidad4 precio4 boton4"
-    "foto5 descripcion5 cantidad5 precio5 boton5"
-    "foto6 descripcion6 cantidad6 precio6 boton6"
-    "VOLVER TOTAL SUMACANT SUMAPREC PAGAR";
+    "  .    PRODUCTO CANTIDAD PRECIO"
+    "foto2 descripcion2 cantidad2 precio2"
+    "foto3 descripcion3 cantidad3 precio3"
+    "foto4 descripcion4 cantidad4 precio4"
+    "foto5 descripcion5 cantidad5 precio5"
+    "foto6 descripcion6 cantidad6 precio6"
+    "VOLVER TOTAL SUMACANT SUMAPREC"
+    "   .     .      .     PAGAR";
     row-gap:10px;
     margin-left:10px;
     margin-right:10px;
@@ -80,6 +81,14 @@
 .VOLVER {
 
     grid-area:VOLVER;
+    @extend .text-format;
+    padding:5px;
+
+}
+
+.PAGAR {
+
+    grid-area:PAGAR;
     @extend .text-format;
     padding:5px;
 
@@ -218,7 +227,6 @@
 .precio2 {
 
     grid-area:precio2;
-    
     @extend .text-format;
     padding:10px;
 
@@ -266,60 +274,6 @@
 
 }
 
-.ELIMINAR {
 
-    grid-area:ELIMINAR;
-    @extend .text-format;
-    font-weight:600;
-    background-color: lightgray;
-    padding:10px;
 
-}
 
-.boton2 {
-
-    grid-area:boton2;
-    @extend .text-format;
-    padding:10px;
-
-}
-
-.boton3 {
-
-    grid-area:boton3;
-    @extend .text-format;
-    padding:10px;
-
-}
-
-.boton4 {
-
-    grid-area:boton4;
-    @extend .text-format;
-    padding:10px;
-
-}
-
-.boton5 {
-
-    grid-area:boton5;
-    @extend .text-format;
-    padding:10px;
-
-}
-
-.boton6 {
-
-    grid-area:boton6;
-    @extend .text-format;
-    padding:10px;
-
-}
-
-.PAGAR {
-
-    grid-area:PAGAR;
-    @extend .text-format;
-    padding:5px;
-
-}
