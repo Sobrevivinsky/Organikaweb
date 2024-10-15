@@ -90,3 +90,32 @@
     justify-content:space-around;
 
 }
+
+@media (max-width:440px) {
+
+    .footer__logos {
+
+        flex-direction: column;
+        justify-content:center;
+
+
+    }
+
+    .footer__navbar--FAQs {
+
+        font-size:12px;
+    }
+
+    .footer__text h4 {
+
+        font-size:24px;
+    }
+
+    .footer__navbar--redes {
+
+        font-size:14px;
+        padding:8px;
+    }
+
+
+}
