@@ -25,6 +25,7 @@
     text-decoration:none;
     justify-content:left;
     align-items:center;
+    margin-top:10px;
     
 }
 
@@ -36,8 +37,8 @@
     font-size: 18px;
     font-weight:320;
     transition: color 1 ease, font-size 1 ease;
-    
 
+    
 
 }
 
@@ -62,12 +63,30 @@
 
 }
 
-.footer__text--interlineado {
 
-    line-height:20%;
-    margin-top: 1em;
-    margin-left:2em;
+.footer__navbar--FAQ {
+
+    margin-left:1em;
 }
 
+.footer__navbar--FAQs {
 
+    font-family:"Raleway", sans-serif;
+    font-size:14px;
+    text-decoration:none;
+    color:black;
+}
 
+.footer__navbar--FAQs:hover {
+
+    color:#f0e9a6;
+    font-size:16px;
+}
+
+.footer__logos {
+
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+
+}
