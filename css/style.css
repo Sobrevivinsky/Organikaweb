@@ -69,7 +69,7 @@ p {
 }
 
 .footer__row {
-  min-height: 200px;
+  min-height: 230px;
   display: flex;
   background-color: #59A7A7;
   border: 1px gray solid;
@@ -96,15 +96,15 @@ p {
   font-size: 22px;
 }
 
-.footer__text {
-  font-size: 14px;
-  justify-content: left;
-  margin-left: 2em;
-}
-
 .footer__text h4 {
   font-size: 28px;
   text-align: left;
+  margin-left: 1em;
+}
+
+.footer__copyright {
+  font-size: 12px;
+  text-align: right;
   margin-left: 1em;
 }
 
@@ -130,13 +130,15 @@ p {
   justify-content: space-around;
 }
 
-@media (max-width: 440px) {
+@media (max-width: 490px) {
   .footer__logos {
     flex-direction: column;
     justify-content: center;
+    margin-top: 5px;
   }
   .footer__navbar--FAQs {
     font-size: 12px;
+    margin-left: -8px;
   }
   .footer__text h4 {
     font-size: 24px;
@@ -173,6 +175,12 @@ p {
   font-family: "Raleway";
 }
 
+@media (max-width: 490px) {
+  .main__product--text {
+    font-size: 12px;
+    text-align: center;
+  }
+}
 /* BLOG */
 .main__blog--backround {
   height: auto;
