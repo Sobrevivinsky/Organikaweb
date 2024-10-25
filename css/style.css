@@ -140,12 +140,20 @@ p {
     font-size: 12px;
     margin-left: -8px;
   }
+  .footer__navbar--FAQs:hover {
+    color: #f0e9a6;
+    font-size: 9px;
+  }
   .footer__text h4 {
     font-size: 24px;
   }
   .footer__navbar--redes {
     font-size: 14px;
     padding: 8px;
+  }
+  .footer__navbar--redes:hover {
+    color: #f0e9a6;
+    font-size: 16px;
   }
 }
 /* IMPORTS ESTILOS PAGES */
@@ -176,6 +184,12 @@ p {
 }
 
 @media (max-width: 490px) {
+  .main__product--text {
+    font-size: 12px;
+    text-align: center;
+  }
+}
+@media (max-width: 800px) {
   .main__product--text {
     font-size: 12px;
     text-align: center;
@@ -383,6 +397,11 @@ p {
   font-weight: 600;
   background-color: lightgray;
   padding: 10px;
+}
+
+.main__title--mediosdepago {
+  margin: 1em;
+  font-size: 18px;
 }
 
 /* CONTACTO */
